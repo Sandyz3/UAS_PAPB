@@ -47,6 +47,7 @@
                 android:layout_marginEnd="30dp"
                 android:background="@drawable/text_background_darker"
                 android:fontFamily="@font/fontregular"
+                android:textAlignment="center"
                 android:text="@string/account_detail"
                 android:textColor="@color/white" />
 

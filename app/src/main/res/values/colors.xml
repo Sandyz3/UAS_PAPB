@@ -28,12 +28,14 @@
     <color name="greyDisabled">#61000000</color>
     <color name="main_black">#2A2A27</color>
     <color name="main_yellow">#EBC351</color>
+    <color name="second_yellow">#FCEEA6</color>
     <color name="main_white">#E3E3E3</color>
     <color name="main_purple">#9697EE</color>
     <color name="mix_purple">#bb90d8</color>
     <color name="blue">#67e8f9</color>
     <color name="indigo_400">#818cf8</color>
     <color name="indigo_300">#a5b4fc</color>
+    <color name="indigo_200">#9296D9</color>
     <color name="red">#F21C4B</color>
     <color name="yellow">#F2EB1C</color>
     <color name="pink">#e69dc8</color>
