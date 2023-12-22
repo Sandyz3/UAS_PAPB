@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg1"
+        android:importantForAccessibility="no" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/logo_bg"
+        android:clipToOutline="true"
+        android:importantForAccessibility="no"
+        android:src="@drawable/logo1"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="150dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/logo" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_bg"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_left2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="38dp" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_right2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="38dp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/et_bg"
+                android:drawableEnd="@drawable/ic_baseline_email_24"
+                android:drawableTint="@color/white_light"
+                android:hint="@string/email_address"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textColor="@color/white_light"
+                android:textColorHint="@color/white_light"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline_right2"
+                app:layout_constraintStart_toStartOf="@id/guideline_left2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/et_bg"
+                android:drawableEnd="@drawable/ic_baseline_eye_24"
+                android:drawableTint="@color/white_light"
+                android:hint="@string/password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColor="@color/white_light"
+                android:textColorHint="@color/main_white"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline_right2"
+                app:layout_constraintStart_toStartOf="@id/guideline_left2"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_bg"
+                android:text="@string/login_now"
+                android:textAllCaps="false"
+                android:textColor="@color/white_light"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toStartOf="@id/guideline_right2"
+                app:layout_constraintStart_toStartOf="@id/guideline_left2"
+                app:layout_constraintTop_toBottomOf="@+id/password" />
+
+
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/forgot_password"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toStartOf="@id/guideline_right2"
+                app:layout_constraintStart_toStartOf="@id/guideline_left2"
+                app:layout_constraintTop_toBottomOf="@+id/login_btn" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/box_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="568dp" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/or"
+        android:textColor="@color/white_light"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@+id/box_line" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/google_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/sign_in_with_google"
+        android:textAllCaps="false"
+        android:textColor="@color/white_light"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:icon="@drawable/google_colorful_icon8_img"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:layout_constraintBottom_toTopOf="@id/footer_line"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@+id/or" />
+
+    <View
+        android:id="@+id/footer_line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/white_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_have_an_account_sign_up"
+        android:textColor="@color/white_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/footer_line" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

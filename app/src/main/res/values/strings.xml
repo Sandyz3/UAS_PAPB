@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Uas PAPB</string>
+    <string name="email">Email</string>
+    <string name="login_now">Login Now</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or">or</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="already_have_a_account_login_then">Already Have a Account? Login Then</string>
+    <string name="sign_up">Sign up</string>
+    <string name="re_enter_your_password">Re-Enter Your Password</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email address</string>
+    <string name="default_web_client_id">858410195017-818s0sj9chfs4ipn930dcadjiurd1t82.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="top_movie">Top Movie</string>
+    <string name="movie_name">Batman</string>
+    <string name="movie_desc">Deskripsi</string>
+    <string name="mov_rating">Rating :</string>
+    <string name="mov_totalrat">20</string>
+    <string name="hello_username">Hello, %1$s!</string>
+    <string name="none">none</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="delete_now">Delete Now</string>
+    <string name="account_detail">Account Detail\n</string>
+    <string name="first_name">First Name</string>
+    <string name="message_no_results">Oops, couldn\'t find any results\nthat matched your filter</string>
+    <string name="names">%1$s!</string>
+    <string name="last_name">Last Name</string>
+    <string name="disable">Disable For Now</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirmation_password">Confirmation Password</string>
+    <string name="update_account">Update Account</string>
+    <string name="username">Username</string>
+    <string name="about">About</string>
+    <string name="faq">Faq</string>
+    <string name="log_out">Log Out</string>
+</resources>
